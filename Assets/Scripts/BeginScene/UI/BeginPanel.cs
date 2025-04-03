@@ -14,7 +14,12 @@ public class BeginPanel : BasePanel
     {
         btnStart.onClick.AddListener(() =>
         {
-            // 之后会在这里 隐藏自己 显示选角面板
+            // 播放摄像机左转动画 再显示选角面板
+            Camera.main.GetComponent<CameraAnimator>().TurnLeft(() =>
+            {
+                print("显示选角面板");
+            });
+            UIManager.Instance.HidePanel<BeginPanel>();
         });
 
         btnSetting.onClick.AddListener(() =>
