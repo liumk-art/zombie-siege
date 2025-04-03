@@ -11,16 +11,9 @@ public class CameraAnimator : MonoBehaviour
     // 用于记录动画播放完成时调用的事件
     private UnityAction overAction;
     
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     
     // 左转
