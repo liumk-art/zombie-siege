@@ -10,6 +10,9 @@ public class GameDataMgr
     private static GameDataMgr instance = new GameDataMgr();
     public static GameDataMgr Instance => instance;
     
+    // 记录当前选择的数据 用于在之后的游戏场景中创建
+    public RoleInfo nowSelRole;
+    
     // 音效相关数据
     public MusicData musicData;
     
