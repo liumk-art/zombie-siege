@@ -103,7 +103,7 @@ public class ChooseHeroPanel : BasePanel
             GameDataMgr.Instance.nowSelRole = nowRoleData;
             
             // 隐藏自己 显示场景选择界面
-            
+            UIManager.Instance.ShowPanel<ChooseScenePanel>();
             UIManager.Instance.HidePanel<ChooseHeroPanel>();
         });
 
