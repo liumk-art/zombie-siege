@@ -130,9 +130,10 @@ public class ChooseHeroPanel : BasePanel
         {
             Destroy(heroObj);
         }
-        
         // 根据索引取出相关数据
         nowRoleData = GameDataMgr.Instance.roleInfoList[nowIndex];
+        // 更新角色名称
+        txtName.text = nowRoleData.tips;
         // 实例化对象 并记录下来 用于下次切换时删除
         heroObj = Instantiate(Resources.Load<GameObject>(nowRoleData.res), heroPos.position, heroPos.rotation);
         
