@@ -46581,6 +46581,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 982ad227ef962b945897a626248cf633, type: 3}
   m_PrefabInstance: {fileID: 2128114559}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &920910530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3701102483448406113, guid: 02673e427287fae40abf4fc2d8114b5e, type: 3}
+  m_PrefabInstance: {fileID: 1355547318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &921086183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65140,6 +65145,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3701102483448586821, guid: 02673e427287fae40abf4fc2d8114b5e, type: 3}
   m_PrefabInstance: {fileID: 1355547318}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1355547321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920910530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0733d0c660b6e9d43bb1bdfae333108e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moeny: 0
+  roundSpeed: 50
+--- !u!143 &1355547322
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920910530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 3
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1001 &1356268739
 PrefabInstance:
   m_ObjectHideFlags: 0
