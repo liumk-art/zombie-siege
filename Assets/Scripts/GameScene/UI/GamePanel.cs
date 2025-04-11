@@ -36,6 +36,9 @@ public class GamePanel : BasePanel
         
         // 一开始隐藏下方的按钮组合
         botTrans.gameObject.SetActive(false);
+
+        // 锁定鼠标
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     /// <summary>

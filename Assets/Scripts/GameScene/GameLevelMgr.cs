@@ -103,4 +103,14 @@ public class GameLevelMgr
     {
         nowMonsterNum += num;
     }
+
+    /// <summary>
+    /// 清空当前关卡数据 以防影响下个关卡数据
+    /// </summary>
+    public void ClearInfo()
+    {
+        points.Clear();
+        nowWaveNum = nowMonsterNum = maxWaveNum = 0;
+    }
+    
 }

@@ -81,7 +81,14 @@ public class MonsterObject : MonoBehaviour
         Destroy(this.gameObject);
         
         // 怪物死亡时 检测游戏是否胜利
-        GameLevelMgr.Instance.CheckOver();
+        if (GameLevelMgr.Instance.CheckOver())
+        {
+            // 显示结束界面
+            GameOverPanel panel = UIManager.Instance.ShowPanel<GameOverPanel>();
+            panel.InitInfo(GameLevelMgr.Instance.player.money, true);
+        }
+
+        
     }
 
     // 出生过后再移动
