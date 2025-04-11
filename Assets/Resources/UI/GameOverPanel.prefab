@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 3189021785097320641}
   - component: {fileID: 3189021785097320643}
   - component: {fileID: 3189021785097320642}
+  - component: {fileID: 1116361354}
   m_Layer: 5
   m_Name: GameOverPanel
   m_TagString: Untagged
@@ -162,6 +163,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1116361354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189021785097320640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef52175c9f302f4a94d06196497a05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isShow: 0
+  txtWin: {fileID: 3189021785309975406}
+  txtInfo: {fileID: 3189021785205668311}
+  txtMoney: {fileID: 3189021784138352517}
+  btnSure: {fileID: 3189021785452199954}
 --- !u!1 &3189021785205668309
 GameObject:
   m_ObjectHideFlags: 0

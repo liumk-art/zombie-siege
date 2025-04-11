@@ -1263,7 +1263,7 @@ MonoBehaviour:
   txtHP: {fileID: 4133397141158830056}
   txtWave: {fileID: 4133397140740647092}
   txtMoney: {fileID: 4133397139977042688}
-  hpW: 0
+  hpW: 550
   btnQuit: {fileID: 4133397140749038963}
   botTrans: {fileID: 4133397141072527476}
   towerBtnList:
