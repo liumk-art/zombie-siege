@@ -84,6 +84,9 @@ public class PlayerObject : MonoBehaviour
         for (int i = 0; i < colliders.Length; i++)
         {
             // 得到怪物碰撞体 让其受伤
+            MonsterObject monster = colliders[i].GetComponent<MonsterObject>();
+            if (monster!= null)
+                monster.Wound(atk);
         }
     }
 
@@ -98,7 +101,14 @@ public class PlayerObject : MonoBehaviour
         for (int i = 0; i < hits.Length; i++)
         {
             // 获取到碰撞体
+            MonsterObject monster = hits[i].collider.GetComponent<MonsterObject>();
             // 对应怪物脚本逻辑
+            if (monster != null)
+            {
+                monster.Wound(atk);
+                break;
+            }
+               
         }
     }
     

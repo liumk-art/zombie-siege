@@ -3082,6 +3082,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1060451293815194425}
   - component: {fileID: 1060451293822217589}
+  - component: {fileID: 5206517479426730165}
+  - component: {fileID: -7682787634814230175}
   m_Layer: 0
   m_Name: 6
   m_TagString: Untagged
@@ -3150,6 +3152,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!143 &5206517479426730165
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060451293815110639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 3
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!114 &-7682787634814230175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060451293815110639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0733d0c660b6e9d43bb1bdfae333108e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+  roundSpeed: 50
+  gunPoint: {fileID: 4764356559660422414}
 --- !u!1 &1060451293815111655
 GameObject:
   m_ObjectHideFlags: 0

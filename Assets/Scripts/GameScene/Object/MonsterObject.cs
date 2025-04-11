@@ -52,6 +52,7 @@ public class MonsterObject : MonoBehaviour
         if (hp <= 0)
         {
             // 死亡
+            Dead();
         }
         else
         {
@@ -76,6 +77,11 @@ public class MonsterObject : MonoBehaviour
     public void DeadEvent()
     {
         // 死亡动画播放完毕后移除对象
+        GameLevelMgr.Instance.ChangeMonsterNum(-1);
+        Destroy(this.gameObject);
+        
+        // 怪物死亡时 检测游戏是否胜利
+        GameLevelMgr.Instance.CheckOver();
     }
 
     // 出生过后再移动
