@@ -5,7 +5,8 @@
         "defaultWeapon": 4,
         "lockMoney": 0,
         "hp": 100,
-        "tips": "最帅气的男人"
+        "tips": "最帅气的男人",
+        "hitEff": "eff/1"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "defaultWeapon": 4,
         "lockMoney": 0,
         "hp": 100,
-        "tips": "最威猛的男人"
+        "tips": "最威猛的男人",
+        "hitEff": "eff/1"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "defaultWeapon": 4,
         "lockMoney": 100,
         "hp": 100,
-        "tips": "最善良的男人"
+        "tips": "最善良的男人",
+        "hitEff": "eff/1"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "defaultWeapon": 4,
         "lockMoney": 200,
         "hp": 100,
-        "tips": "最邪恶的男人"
+        "tips": "最邪恶的男人",
+        "hitEff": "eff/1"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "defaultWeapon": 4,
         "lockMoney": 300,
         "hp": 100,
-        "tips": "最可爱的男人"
+        "tips": "最可爱的男人",
+        "hitEff": "eff/1"
     },
     {
         "id": 6,
@@ -45,6 +50,7 @@
         "defaultWeapon": 2,
         "lockMoney": 400,
         "hp": 100,
-        "tips": "最娘炮的男人"
+        "tips": "最娘炮的男人",
+        "hitEff": "eff/1"
     }
 ]

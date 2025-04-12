@@ -80,6 +80,8 @@ public class PlayerObject : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(this.transform.position + this.transform.forward + this.transform.up, 1,
             1 << LayerMask.NameToLayer("Monster"));
 
+        // 播放音效
+        GameDataMgr.Instance.PlaySound("Music/Knife");
         // 对应怪物脚本逻辑
         for (int i = 0; i < colliders.Length; i++)
         {
@@ -98,6 +100,8 @@ public class PlayerObject : MonoBehaviour
         // 进行射线检测
         RaycastHit[] hits = Physics.RaycastAll(new Ray(gunPoint.position, gunPoint.forward), 1000, 1 << LayerMask.NameToLayer("Monster"));
         
+        // 播放音效
+        GameDataMgr.Instance.PlaySound("Music/Gun");
         for (int i = 0; i < hits.Length; i++)
         {
             // 获取到碰撞体
@@ -105,6 +109,12 @@ public class PlayerObject : MonoBehaviour
             // 对应怪物脚本逻辑
             if (monster != null)
             {
+                // 打击特效的创建
+                GameObject effObj = Instantiate(Resources.Load<GameObject>(GameDataMgr.Instance.nowSelRole.hitEff));
+                effObj.transform.position = hits[i].point;
+                effObj.transform.rotation = Quaternion.LookRotation(hits[i].normal);
+                Destroy(effObj, 1f);
+                
                 monster.Wound(atk);
                 break;
             }

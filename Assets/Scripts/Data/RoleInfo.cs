@@ -13,4 +13,5 @@ public class RoleInfo
     public int lockMoney;
     public float hp;
     public string tips;
+    public string hitEff;
 }

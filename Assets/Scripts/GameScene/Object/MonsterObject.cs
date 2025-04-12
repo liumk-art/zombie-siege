@@ -57,6 +57,7 @@ public class MonsterObject : MonoBehaviour
         else
         {
             // 播放音效
+            GameDataMgr.Instance.PlaySound("Music/Wound");
         }
     }
 
@@ -69,7 +70,7 @@ public class MonsterObject : MonoBehaviour
         // 播放死亡动画
         animator.SetBool("Dead", true);
         // 播放音效
-
+        GameDataMgr.Instance.PlaySound("Music/Dead");
         // 加钱
     }
 
@@ -129,6 +130,8 @@ public class MonsterObject : MonoBehaviour
             this.transform.position + this.transform.forward + this.transform.up, 1,
             1 << LayerMask.NameToLayer("MainTower"));
 
+        // 播放音效
+        GameDataMgr.Instance.PlaySound("Music/Eat");
         for (int i = 0; i < colliders.Length; i++)
         {
             if (MainTowerObject.Instance.gameObject == colliders[i].gameObject)
