@@ -28,6 +28,9 @@ public class GameDataMgr
     // 所有的怪物数据
     public List<MonsterInfo> monsterInfoList;
     
+    // 所有塔的数据
+    public List<TowerInfo> towerInfoList;
+    
     private GameDataMgr()
     {
         // 初始化默认数据
@@ -40,6 +43,8 @@ public class GameDataMgr
         sceneInfoList = JsonMgr.Instance.LoadData<List<SceneInfo>>("SceneInfo");
         // 读取怪物数据
         monsterInfoList = JsonMgr.Instance.LoadData<List<MonsterInfo>>("MonsterInfo");
+        // 读取塔数据
+        towerInfoList = JsonMgr.Instance.LoadData<List<TowerInfo>>("TowerInfo");
     }
     
     /// <summary>
