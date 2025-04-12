@@ -75,7 +75,8 @@ public class MonsterPoint : MonoBehaviour
         monster.InitInfo(info);
 
         // 通知管卡管理器出了一只怪
-        GameLevelMgr.Instance.ChangeMonsterNum(1);
+        // GameLevelMgr.Instance.ChangeMonsterNum(1);
+        GameLevelMgr.Instance.AddMonster(monster);
         // 创建一只怪物后 减少怪物数量
         nowNum--;
         if (nowNum == 0)
