@@ -69,13 +69,14 @@ public class MonsterObject : MonoBehaviour
     {
         isDead = true;
         // 停止移动
-        agent.isStopped = true;
+        // agent.isStopped = true;
+        agent.enabled = false;
         // 播放死亡动画
         animator.SetBool("Dead", true);
         // 播放音效
         GameDataMgr.Instance.PlaySound("Music/Dead");
         // 加钱
-        GameLevelMgr.Instance.player.AddMoney(20);
+        GameLevelMgr.Instance.player.AddMoney(15);
     }
 
     // 死亡动画播放完毕后调用的方法

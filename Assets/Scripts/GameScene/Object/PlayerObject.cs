@@ -98,7 +98,7 @@ public class PlayerObject : MonoBehaviour
     public void ShootEvent()
     {
         // 进行射线检测
-        RaycastHit[] hits = Physics.RaycastAll(new Ray(gunPoint.position, gunPoint.forward), 1000, 1 << LayerMask.NameToLayer("Monster"));
+        RaycastHit[] hits = Physics.RaycastAll(new Ray(gunPoint.position, this.transform.forward), 1000, 1 << LayerMask.NameToLayer("Monster"));
         
         // 播放音效
         GameDataMgr.Instance.PlaySound("Music/Gun");

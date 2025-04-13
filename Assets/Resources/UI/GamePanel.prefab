@@ -1266,7 +1266,7 @@ MonoBehaviour:
   hpW: 550
   btnQuit: {fileID: 4133397140749038963}
   botTrans: {fileID: 4133397141072527476}
-  towerBtnList:
+  towerBtns:
   - {fileID: 4133397141008104665}
   - {fileID: 4133397140690083440}
   - {fileID: 4133397140247430318}

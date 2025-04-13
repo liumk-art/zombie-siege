@@ -6,7 +6,7 @@
         "sceneName": "GameScene1",
         "tips": "啦啦啦啦啦啦",
         "towerHp": 100,
-        "money": 200
+        "money": 1000
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "sceneName": "GameScene2",
         "tips": "嘻嘻嘻嘻",
         "towerHp": 100,
-        "money": 200
+        "money": 1000
     },
     {
         "id": 3,
@@ -24,6 +24,6 @@
         "sceneName": "GameScene3",
         "tips": "哈哈哈哈哈啊",
         "towerHp": 100,
-        "money": 200
+        "money": 1000
     }
 ]
