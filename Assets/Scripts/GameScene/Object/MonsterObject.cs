@@ -46,6 +46,9 @@ public class MonsterObject : MonoBehaviour
     // 受伤
     public void Wound(int dmg)
     {
+        if (isDead)
+            return;
+        
         // 减少血量
         hp -= dmg;
         animator.SetTrigger("Wound");
@@ -72,6 +75,7 @@ public class MonsterObject : MonoBehaviour
         // 播放音效
         GameDataMgr.Instance.PlaySound("Music/Dead");
         // 加钱
+        GameLevelMgr.Instance.player.AddMoney(20);
     }
 
     // 死亡动画播放完毕后调用的方法

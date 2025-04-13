@@ -53,7 +53,7 @@ public abstract class BasePanel : MonoBehaviour
     /// </summary>
     public abstract void Init();
 
-    void Update()
+    protected virtual void Update()
     {
         // 显示面板 淡入
         if (isShow && canvasGroup.alpha < 1)

@@ -87,7 +87,7 @@ public class PlayerObject : MonoBehaviour
         {
             // 得到怪物碰撞体 让其受伤
             MonsterObject monster = colliders[i].GetComponent<MonsterObject>();
-            if (monster!= null)
+            if (monster!= null && !monster.isDead)
                 monster.Wound(atk);
         }
     }
@@ -107,7 +107,7 @@ public class PlayerObject : MonoBehaviour
             // 获取到碰撞体
             MonsterObject monster = hits[i].collider.GetComponent<MonsterObject>();
             // 对应怪物脚本逻辑
-            if (monster != null)
+            if (monster != null && !monster.isDead)
             {
                 // 打击特效的创建
                 GameObject effObj = Instantiate(Resources.Load<GameObject>(GameDataMgr.Instance.nowSelRole.hitEff));
