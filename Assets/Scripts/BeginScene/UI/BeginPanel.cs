@@ -30,7 +30,7 @@ public class BeginPanel : BasePanel
 
         btnAbout.onClick.AddListener(() =>
         {
-            //你可以自己制作一个关于面板 之后在这里显示
+            UIManager.Instance.ShowPanel<AboutPanel>();
         });
 
         btnQuit.onClick.AddListener(() =>
